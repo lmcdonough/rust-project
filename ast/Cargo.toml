@@ -1,0 +1,7 @@
+# ast data types live here, keep it std-only for portability.
+[package]
+name = "ast"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

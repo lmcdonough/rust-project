@@ -1,0 +1,4 @@
+# keep formatting consisten across the repo
+max_width = 100
+use_small_heuristics = "Max"
+edition = "2021"

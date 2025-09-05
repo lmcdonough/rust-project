@@ -1,0 +1,9 @@
+# Purpose: convert tokens into ast::Expr/Stmt.
+[package]
+name = "parser"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ast = { path = "../ast" }
+lexer = { path = "../lexer" }

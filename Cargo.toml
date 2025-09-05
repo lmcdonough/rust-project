@@ -1,0 +1,15 @@
+# declare a Cargo workspace to manage all crates together.
+[workspace]
+members = ["ast", "lexer", "parser", "runtime", "cli", "repl"]
+
+# Optional: make all crates use the same edition and lint settings via Workspace inheritence
+[workspace.package]
+edition = "2021"
+
+[workspace.lints.clippy]
+# start pragmatic. tighten up later.
+pedantic = "allow"
+nursery = "allow"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
