@@ -2,6 +2,6 @@
 // We'll replace with a real tokenizer in Phase 5
 #![forbid(unsafe_code)]
 
-pub fs ping() -> &'static str {
-    "lexer::ok"
+pub fn ping() -> &'static str {
+    "pong"
 }
