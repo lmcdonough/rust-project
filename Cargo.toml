@@ -10,8 +10,11 @@ edition = "2024"
 
 [workspace.lints.clippy]
 # start pragmatic. tighten up later.
+all = "warn"
 pedantic = "allow"
 nursery = "allow"
+cargo = "warn"
+dbg_macro = "deny"
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

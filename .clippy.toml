@@ -1,3 +1,4 @@
-warns = ["clippy::all"]
-
-allow-private-module-inception = true
+cognitive-complexity-threshold = 35
+too-many-arguments-threshold = 7
+enum-variant-size-threshold = 200
+warn-on-all-wildcard-imports = true
