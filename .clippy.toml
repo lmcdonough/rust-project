@@ -1,0 +1,3 @@
+warns = ["clippy::all"]
+
+allow-private-module-inception = true

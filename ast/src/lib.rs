@@ -1,7 +1,6 @@
-/// A library for working with abstract syntax trees (AST).
 #![forbid(unsafe_code)]
 
-// we'll grow these enums alongside the parser.
+/// Expresion nodes for our Python subset.
 #[derive(Debug, Clone, PartialEq)]
 pub enum Expr {
     Int(i64),
@@ -9,6 +8,7 @@ pub enum Expr {
     // placeholder: binary ops, calls, etc.
 }
 
+/// Statement nodes for our Python subset.
 #[derive(Debug, Clone, PartialEq)]
 pub enum Stmt {
     ExprStmt(Expr),

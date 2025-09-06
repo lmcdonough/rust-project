@@ -6,3 +6,8 @@ edition = "2024"
 
 [dependencies]
 runtime = { path = "../runtime" }
+
+# binary target for the cli executable
+[[bin]]
+name = "cli"
+path = "src/main.rs"

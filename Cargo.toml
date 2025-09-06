@@ -2,9 +2,11 @@
 [workspace]
 members = ["ast", "lexer", "parser", "runtime", "cli", "repl"]
 
+resolver = "3"
+
 # Optional: make all crates use the same edition and lint settings via Workspace inheritence
 [workspace.package]
-edition = "2021"
+edition = "2024"
 
 [workspace.lints.clippy]
 # start pragmatic. tighten up later.
