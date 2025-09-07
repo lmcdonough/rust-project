@@ -1,0 +1,4 @@
+[alias]
+dev = "run-script dev"
+lint = "clippy --workspace --all-targets --all-features -q"
+fmt = "fmt --all"

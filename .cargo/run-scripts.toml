@@ -1,0 +1,2 @@
+[scripts]
+dev = { path = "scripts/dev-check.sh" }
