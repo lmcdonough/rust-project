@@ -1,4 +1,4 @@
-# Usage: make all | make fmt | make lint | make check
+# Usage: make dev | make fmt | make check | make clippy | make run-cli | make run-repl
 
 .PHONY: dev fmt check clippy run-cli run-repl
 
