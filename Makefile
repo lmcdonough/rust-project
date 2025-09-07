@@ -1,17 +1,21 @@
 # Usage: make all | make fmt | make lint | make check
 
-.PHONY: all fmt lint check dev
+.PHONY: dev fmt check clippy run-cli run-repl
 
-all: dev
+dev:
+	./scripts/dev-check.sh
 
 fmt:
 	cargo fmt --all
 
-lint:
-	cargo clippy --workspace --all-targets --all-features -q
-
 check:
 	cargo check --workspace
 
-dev:
-	./scripts/dev-check.sh
+clippy:
+	cargo clippy --workspace --all-targets --all-features -q
+
+run-cli:
+	cargo run -p cli
+
+run-repl:
+	cargo run -p repl

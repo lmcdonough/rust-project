@@ -5,10 +5,17 @@ set -euo pipefail
 echo "[def] formatting..."
 cargo fmt --all
 
-echo "[dev] linting..."
-cargo clippy --workspace --all-targets --all-features -q
-
-echo "[dev] checking..."
+echo "[def] type-checking..."
 cargo check --workspace
 
-echo "[dev] ok."
+echo "[def] linting..."
+
+cargo clippy --workspace --all-targets --all-features -q
+
+echo "[def] smoke-run cli..."
+cargo run -p cli
+
+echo "[def] smoke-run repl..."
+cargo run -p repl
+
+echo "[ok] dev-check complete."

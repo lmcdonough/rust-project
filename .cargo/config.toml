@@ -1,4 +1,6 @@
 [alias]
-dev = "run-script dev"
-lint = "clippy --workspace --all-targets --all-features -q"
-fmt = "fmt --all"
+fmtall = "fmt --all"
+checkall = "check --workspace"
+clippyall = "clippy --workspace --all-targets --all-features -q"
+runcli = "run -p cli"
+runrepl = "run -p repl"
